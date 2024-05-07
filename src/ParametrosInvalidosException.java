@@ -4,3 +4,4 @@ public class ParametrosInvalidosException extends Exception {
       super(mensagem);
   }
 }
+ 
