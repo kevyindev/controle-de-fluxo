@@ -53,9 +53,9 @@ public class Contador {
     }
 
     // Método para realizar a contagem e imprimir os números
-    static void contar(int parametroUm, int parametroDois) {
-        for (int i = parametroUm; i <= parametroDois; i++) {
-            System.out.println(i);
+    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
+        if (parametroUm > parametroDois) {
+            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro.");
         }
     }
 }
